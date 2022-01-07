@@ -22,6 +22,17 @@ Com a beenode é possível monitorar e controlar seus dispositivos pela internet
 - [ ] Criação instancia privativa (VPS)
 - [ ] Bando de dados
 - [ ] Integração Grafana
+- [ ] Coletor de dados (OPC-UA, OPC-DA, MySQL, Oracle)
+
+## Como utilizar ?
+
+Após o cadastro na pagina da [Beenode](http://beenode.io/Login), o usuário deverá abrir a aba do MQTT e fazer no cadastro no Broker.
+O usuário receberá as informações basicas para conexão em TCP.
+
+<div align="center">
+<img src="https://github.com/beenodeio/beenode/blob/main/Imagens/MQTT_Beenode_V1.png" width="300px" />
+</div>
+
 
 Use `git status` to list all new or modified files that haven't yet been committed.
 
