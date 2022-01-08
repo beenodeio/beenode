@@ -33,6 +33,11 @@ O usuário receberá as informações basicas para conexão em TCP.
 <img src="https://github.com/beenodeio/beenode/blob/main/Imagens/MQTT_Beenode_V1.png" width="300px" />
 </div>
 
+Cada usuário receberá um tópico esclusivo na qual poderá publicar e subescrever as informações e tambem criar subtópicos.
+**Rescrições** não é possivel publicar ou subescrever em um toíco diferente do cadastrado. Os limites de taxa de envio estão limitadas ao processamento do servidor e a utilização dos demais clientes. **OBS**: Usuários da conta gratuita irão compartilhar do mesmo Broker e poderá no futuro sofrer limitações na taxa de envio.
+
+
+
 
 Use `git status` to list all new or modified files that haven't yet been committed.
 
