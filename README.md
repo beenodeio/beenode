@@ -38,8 +38,8 @@ Cada usuário receberá um tópico esclusivo na qual poderá publicar e subescre
 
 ## Como funciona ?
 
-A platqaforma pode pode receber informações de coletores de dados e enviados via MQTT para o Broker da beenode onde é posivel trabalhar de duas formas.
-Utilizando os KPIs internos da beenode para monitorar ou controlar os devices, ou utilizando a instancia do Node-Red criada no momento da criação de cadastro do usuário.
+A plataforma pode receber informações de coletores de dados enviados via MQTT para o Broker da beenode, onde é posivel trabalhar de duas formas.
+Utilizando os KPIs internos da beenode para monitorar e controlar os devices, ou utilizando a instancia do Node-Red criada no momento da criação de cadastro do usuário para criação de logicas e Dashboards.
 
 <div align="center">
 <img src="https://github.com/beenodeio/beenode/blob/main/Imagens/PLC_Sensor_DB_MQTT_Senario.png" width="800px" />
