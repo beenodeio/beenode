@@ -36,38 +36,12 @@ O usuário receberá as informações basicas para conexão em TCP.
 Cada usuário receberá um tópico esclusivo na qual poderá publicar e subescrever as informações e tambem criar subtópicos.
 **Rescrições** não é possivel publicar ou subescrever em um toíco diferente do cadastrado. Os limites de taxa de envio estão limitadas ao processamento do servidor e a utilização dos demais clientes. **OBS**: Usuários da conta gratuita irão compartilhar do mesmo Broker e poderá no futuro sofrer limitações na taxa de envio.
 
+## Como funciona ?
 
+A platqaforma pode pode receber informações de coletores de dados e enviados via MQTT para o Broker da beenode onde é posivel trabalhar de duas formas.
+Utilizando os KPIs internos da beenode para monitorar ou controlar os devices, ou utilizando a instancia do Node-Red criada no momento da criação de cadastro do usuário.
 
+<div align="center">
+<img src="https://github.com/beenodeio/beenode/blob/main/Imagens/PLC_Sensor_DB_MQTT_Senario.png" width="800px" />
+</div>
 
-Use `git status` to list all new or modified files that haven't yet been committed.
-
-Some basic Git commands are:
-```
-git status
-git add
-git commit
-```
-
-This site was built using [GitHub Pages](https://pages.github.com/).
-
-- George Washington
-- John Adams
-- Thomas Jefferson
-
-# Título <h1>
-## Título <h2>
-### Título <h3>
-#### Título <h4>
-##### Título <h5>
-###### Título <h6>
-
-~~~javascript
-Esta é uma linha de código em Javascript.
-~~~
-
-  Exemplo   | Valor do exemplo
---------- | ------
-Exemplo 1 | R$ 10
-Exemplo 2 | R$ 8
-Exemplo 3 | R$ 7
-Exemplo 4 | R$ 8
