@@ -1,0 +1,493 @@
+[
+    {
+        "id": "18d85f4d0ea8133d",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e0d121dd.c991e",
+        "type": "ui_button",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "group": "2cac67c860f5a614",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Liga",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 230,
+        "y": 100,
+        "wires": [
+            [
+                "19042e5f.ef4e42"
+            ]
+        ]
+    },
+    {
+        "id": "19042e5f.ef4e42",
+        "type": "ui_text",
+        "z": "18d85f4d0ea8133d",
+        "group": "2cac67c860f5a614",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Saida Bloco",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 450,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "fe4bd707.23a5e8",
+        "type": "ui_switch",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "59e735d935598ebf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 730,
+        "y": 100,
+        "wires": [
+            [
+                "8d25bd8b.633e6"
+            ]
+        ]
+    },
+    {
+        "id": "8d25bd8b.633e6",
+        "type": "ui_text",
+        "z": "18d85f4d0ea8133d",
+        "group": "59e735d935598ebf",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 920,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "3cf292e6.d772ee",
+        "type": "ui_slider",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "bafb50cf970b8828",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "topicType": "str",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "8e47e3d0.6095"
+            ]
+        ]
+    },
+    {
+        "id": "8e47e3d0.6095",
+        "type": "ui_gauge",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "group": "bafb50cf970b8828",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 470,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "90209a48.e22278",
+        "type": "ui_chart",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "group": "acfbaa5d4de8f4a7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44c6e5c4.4bef8c",
+        "type": "ui_text_input",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "f564f72c3d79ee15",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 240,
+        "y": 440,
+        "wires": [
+            [
+                "1e0fcffb.cf404"
+            ]
+        ]
+    },
+    {
+        "id": "1e0fcffb.cf404",
+        "type": "ui_text",
+        "z": "18d85f4d0ea8133d",
+        "group": "f564f72c3d79ee15",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Saida",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 470,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "ea4d75a8.7b7b38",
+        "type": "ui_button",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "group": "2cac67c860f5a614",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Desliga",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 240,
+        "y": 140,
+        "wires": [
+            [
+                "19042e5f.ef4e42"
+            ]
+        ]
+    },
+    {
+        "id": "743d1ad4.d95ec4",
+        "type": "function",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "func": "msg.payload = Math.round(Math.random()*100);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 940,
+        "y": 280,
+        "wires": [
+            [
+                "90209a48.e22278"
+            ]
+        ]
+    },
+    {
+        "id": "e08803a2.e3de7",
+        "type": "inject",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "743d1ad4.d95ec4"
+            ]
+        ]
+    },
+    {
+        "id": "84688bbe.94ab38",
+        "type": "ui_numeric",
+        "z": "18d85f4d0ea8133d",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "c218335eecbc3475",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 740,
+        "y": 440,
+        "wires": [
+            [
+                "6d1af793.2075b8"
+            ]
+        ]
+    },
+    {
+        "id": "6d1af793.2075b8",
+        "type": "ui_text",
+        "z": "18d85f4d0ea8133d",
+        "group": "c218335eecbc3475",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Saida",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 930,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6f29e67095182f76",
+        "type": "comment",
+        "z": "18d85f4d0ea8133d",
+        "name": "Logica Gupo 1",
+        "info": "",
+        "x": 360,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "053488225c2d527f",
+        "type": "comment",
+        "z": "18d85f4d0ea8133d",
+        "name": "Logica Gupo 2",
+        "info": "",
+        "x": 820,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "baa63c7d88a443a5",
+        "type": "comment",
+        "z": "18d85f4d0ea8133d",
+        "name": "Logica Gupo 3",
+        "info": "",
+        "x": 360,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9fccf7b051e64172",
+        "type": "comment",
+        "z": "18d85f4d0ea8133d",
+        "name": "Logica Gupo 4",
+        "info": "",
+        "x": 820,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b38711fc8e8765af",
+        "type": "comment",
+        "z": "18d85f4d0ea8133d",
+        "name": "Logica Gupo 5",
+        "info": "",
+        "x": 360,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "486f847bfa042d21",
+        "type": "comment",
+        "z": "18d85f4d0ea8133d",
+        "name": "Logica Gupo 6",
+        "info": "",
+        "x": 820,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "2cac67c860f5a614",
+        "type": "ui_group",
+        "name": "Grupo 1",
+        "tab": "626d20519a1129fa",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "59e735d935598ebf",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "626d20519a1129fa",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "bafb50cf970b8828",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "626d20519a1129fa",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "acfbaa5d4de8f4a7",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "626d20519a1129fa",
+        "order": 4,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "f564f72c3d79ee15",
+        "type": "ui_group",
+        "name": "Group 5",
+        "tab": "626d20519a1129fa",
+        "order": 5,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "c218335eecbc3475",
+        "type": "ui_group",
+        "name": "Group 6",
+        "tab": "626d20519a1129fa",
+        "order": 6,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "626d20519a1129fa",
+        "type": "ui_tab",
+        "name": "Teste",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    }
+]
